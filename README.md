@@ -12,6 +12,12 @@ project with its own README covering the problem, my contribution, and the stack
   with both classical ML (k-NN/Decision Tree/SVM) and a CNN model. Team project with
   Victor Vezina.
 
+- **[llm-defense-in-depth-data-leakage](./llm-defense-in-depth-data-leakage)**
+  — Designed and ran a full 2³ factorial security experiment on an LLM-enabled web app,
+  testing three defense layers (context isolation, prompt sanitization, response
+  redaction) against cross-user data leakage and prompt injection attacks. Team project
+  with Amalachukwu Azubike, Kokou Houmey, and Victor Vezina.
+
 More projects will be added here as coursework and independent work wrap up.
 
 ## Contact
