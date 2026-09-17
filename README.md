@@ -18,6 +18,12 @@ project with its own README covering the problem, my contribution, and the stack
   redaction) against cross-user data leakage and prompt injection attacks. Team project
   with Amalachukwu Azubike, Kokou Houmey, and Victor Vezina.
 
+- **[threat-hunting-peak-toolshed](./threat-hunting-peak-toolshed)**
+  — Individual hypothesis-driven threat hunt (PEAK framework) for an unauthenticated
+  RCE vulnerability chain. Built matching host (Sigma) and network (Suricata)
+  detections, then generated synthetic attack traffic with Flowsynth to validate both
+  against the real exploit pattern and a benign lookalike.
+
 More projects will be added here as coursework and independent work wrap up.
 
 ## Contact

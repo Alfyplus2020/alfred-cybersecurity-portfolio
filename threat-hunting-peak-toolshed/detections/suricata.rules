@@ -1,0 +1,30 @@
+# NDSA-2026-0007 "TOOLSHED" - NimbusDesk ToolShed Panel Unauthenticated Command Execution
+# Author: Alfred Amoah | CIS*6580 Assignment 3, Part 4
+# Fires on the two-stage exploit: spoofed SignOut.aspx Referer (auth bypass) and a
+# __NIMBUSSTATE body carrying a RAW semicolon followed by cmd= (command injection).
+# The benign Cloud Uptime Partner PING is NOT matched: it percent-encodes its semicolon
+# as %3B and never carries a cmd= action, so the raw "|3b|cmd=" content below cannot match it.
+
+alert http any any -> any any ( \
+    msg:"NDSA-2026-0007 TOOLSHED NimbusDesk ToolShed Panel unauthenticated command injection"; \
+    flow:established,to_server; \
+    http.method; content:"POST"; \
+    http.uri; content:"/CIS*6580-Assignment3/ToolShed.aspx"; \
+    http.request_body; content:"__NIMBUSSTATE="; content:"|3b|cmd="; distance:0; \
+    reference:url,attack.mitre.org/techniques/T1190/; \
+    reference:url,attack.mitre.org/techniques/T1059/004/; \
+    classtype:web-application-attack; \
+    metadata:studentName Alfred Amoah, advisory NDSA-2026-0007, cwe CWE-78; \
+    sid:1000001; rev:1; \
+)
+
+alert http any any -> any any ( \
+    msg:"NDSA-2026-0007 TOOLSHED NimbusDesk auth bypass via spoofed SignOut.aspx Referer"; \
+    flow:established,to_server; \
+    http.uri; content:"/CIS*6580-Assignment3/ToolShed.aspx"; \
+    http.referer; content:"SignOut.aspx"; \
+    reference:url,attack.mitre.org/techniques/T1190/; \
+    classtype:web-application-attack; \
+    metadata:studentName Alfred Amoah, advisory NDSA-2026-0007, cwe CWE-290; \
+    sid:1000002; rev:1; \
+)
