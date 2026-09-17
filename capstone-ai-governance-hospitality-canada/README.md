@@ -1,7 +1,8 @@
 # Cybersecurity & AI Governance in the Canadian Hospitality and Tourism Industry (Capstone — In Progress)
 
 **Master's Capstone Research Project — University of Guelph, Cybersecurity and Threat Intelligence**
-**Status: IN PROGRESS — literature review stage · under faculty supervision**
+**Status: IN PROGRESS — literature review stage**
+**Supervisor: Dr. Davar Rezania, Gordon S. Lang School of Business and Economics, University of Guelph**
 
 ## Research Focus
 
