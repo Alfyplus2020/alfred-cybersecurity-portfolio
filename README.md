@@ -24,6 +24,14 @@ project with its own README covering the problem, my contribution, and the stack
   detections, then generated synthetic attack traffic with Flowsynth to validate both
   against the real exploit pattern and a benign lookalike.
 
+- **[genai-polymorphic-malware-literature-review](./genai-polymorphic-malware-literature-review)**
+  — A 55-source structured literature review on generative-AI-driven polymorphic malware:
+  a two-axis threat taxonomy, a critical assessment of why current detection approaches
+  (static, behavioral, semantic/graph-based, explainable AI) fall short against AI-generated
+  variants, and a governance gap analysis across NIST AI RMF, ISO/IEC 42001, the EU AI Act,
+  and MITRE ATLAS. Team project with Amalachukwu Azubike, Bereni Iyagba, and Kokou Houmey;
+  the team is pursuing publication.
+
 More projects will be added here as coursework and independent work wrap up.
 
 ## Contact
