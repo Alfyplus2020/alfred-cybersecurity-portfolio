@@ -32,6 +32,13 @@ project with its own README covering the problem, my contribution, and the stack
   and MITRE ATLAS. Team project with Amalachukwu Azubike, Bereni Iyagba, and Kokou Houmey;
   the team is pursuing publication.
 
+- **[digital-forensics-incident-response](./digital-forensics-incident-response)** — Two
+  individual DFIR investigations: a network-forensics case reconstructing a full intrusion
+  lifecycle (perimeter compromise via CVE-2024-4577, ICS/OT reconnaissance, and a follow-on
+  internal webshell/exfiltration session) purely from packet captures, and a mobile-forensics
+  case study examining a logical Android image for identity, communications, web-history, and
+  GPS/EXIF evidence, mapped to specific alleged offences.
+
 More projects will be added here as coursework and independent work wrap up.
 
 ## Contact
