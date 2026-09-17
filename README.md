@@ -4,7 +4,14 @@ Selected work from my Master's in Cybersecurity and Threat Intelligence at the
 University of Guelph, plus independent projects. Each subfolder is a self-contained
 project with its own README covering the problem, my contribution, and the stack used.
 
-## Projects
+## Currently In Progress
+
+- **[capstone-ai-governance-hospitality-canada](./capstone-ai-governance-hospitality-canada)**
+  — Master's capstone research: how the Canadian hospitality and tourism industry approaches
+  cybersecurity risk and AI governance today, and where it's headed. Currently at the literature
+  review stage, moving into industry interviews. Status updates posted as the project progresses.
+
+## Completed Projects
 
 - **[apt29-threat-intel-malware-classification](./apt29-threat-intel-malware-classification)**
   — End-to-end threat intel pipeline: APT29 intelligence profiling, hash-verified
